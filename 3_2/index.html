@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя стильна веб-сторінка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <img src="./bird_2.jpg" alt="Логотип">
+        <ul>
+            <li><a href="#home">Головна</a></li>
+            <li><a href="#about">Про нас</a></li>
+            <li><a href="#services">Послуги</a></li>
+            <li><a href="#contact">Контакти</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section id="home">
+            <h1>Ласкаво просимо на наш сайт</h1>
+            <p>Тут може бути текст про вашу компанію або про веб-сторінку.</p>
+            <a href="#about">Дізнатися більше</a>
+        </section>
+
+        <section id="about">
+            <h2>Про нас</h2>
+            <p>Ми команда професіоналів, що спеціалізується на веб-розробці та дизайні. Наша мета - допомогти вашому бізнесу вийти на новий рівень.</p>
+        </section>
+
+        <section id="services">
+            <h2>Наші послуги</h2>
+            <ul>
+                <li>Веб-дизайн</li>
+                <li>Розробка веб-додатків</li>
+                <li>SEO-продвиження</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Контакти</h2>
+            <p>Зв'яжіться з нами за допомогою форми нижче:</p>
+            <form>
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Надіслати</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Ваше ім'я. Всі права захищені.</p>
+    </footer>
+</body>
+</html>

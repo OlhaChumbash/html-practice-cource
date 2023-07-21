@@ -1,0 +1,91 @@
+/* Загальні стилі для всіх елементів */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+$primary-color: #ff6600;
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  max-width: 100px;
+  height: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+a {
+  color: $primary-color;
+  &:hover {
+    color: darken($primary-color, 10%);
+  }
+}
+
+h1 {
+  color: $primary-color;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+}
+
+footer {
+  background-color: #333;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+/* Стилі для елементів на різних пристроях */
+@media (max-width: 600px) {
+  header {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  nav img {
+      margin-bottom: 10px;
+  }
+
+  nav ul {
+      flex-direction: column;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+}
